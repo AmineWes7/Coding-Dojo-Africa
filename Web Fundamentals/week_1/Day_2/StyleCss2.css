@@ -1,0 +1,32 @@
+.custom-button {
+    width: 200px;
+    height: 50px;
+    border-color: rgb(6, 230, 166);
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: rgb(6, 230, 166);
+    box-shadow: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.circle-button {
+    background-color: #1bdaad; 
+    border: none;
+    color: white;
+    padding: 1px 1px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+button {
+    background-color: #1952cd; 
+    border-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
