@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+.container {
+    width: 800px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    
+}
+    
+.col {
+    width: 290px;
+    padding: 10px;
+    background-color: rgb(20, 165, 232);
+    position: relative;
+    left: 350px;
+}
+.kol {
+    width: 290px;
+    padding: 10px;
+    background-color: rgb(216, 202, 202);
+    position: relative;
+    left: 350px;
+}
+.lol {
+    width: 390px;
+    padding: 10px;
+    background-color: rgb(206, 75, 178);
+    position: relative;
+    left: 350px;
+}
+.image{
+    position: relative;
+    left: 10px;
+}
+img{
+    height: 200px;
+}
+.CR7{
+position: relative;
+left: 50px;
+}
+.SS{
+    position: 20px;
+}
