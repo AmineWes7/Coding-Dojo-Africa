@@ -1,57 +1,35 @@
-body{
- position: relative;
- left: 30%;   
-}
-.container {
-    width: 600px;
-    height: 380px;
-    background-color: rgb(255, 255, 255);
-}
-.col {
-    width: 580px;
-    height: 102px;
-    padding: 10px;
-    background-color:#17A2B8;
-    display: inline-block;
-}
-div{
-    border: black solid 2px;
-}
-.prf{
-height: 100px;
-width: 100px;
-position: relative;
-top: 55px;
-}
-h1{
-    position: relative;
-    top: 20px;
-}
-.map{
-    height: 25px;
-    width: 20px;
-    position: relative;
-    top: 5px;
-}
-h3{
-    position: relative;
-    bottom: 40px;
-    left: 25px;
+.row{
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
 
 }
-p{
-    position: relative;
-    bottom: 40px;
+.col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left:10px ;
+}
+
+
+.col-2{
+    flex:2;
+    padding:10px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #659DA1;
+
+}
+.col-3{
+    flex:3;
+    margin-left: 15px;
+    background-color: #659DA1;
+    padding-top:20px;
+    width: 20%;
+}
+.ii{
     
-}
-.gear{
-    height: 20px;
-    width: 20px;
-    position: relative;
-    bottom:  40px;
-}
-.prg{
-    position: relative;
-    left:  25px;
-    bottom: 40px;
 }
