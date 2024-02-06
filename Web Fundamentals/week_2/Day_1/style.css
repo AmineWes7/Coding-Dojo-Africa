@@ -1,129 +1,148 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #f3f3f3;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.top {
-    background-color: #333;
-    height: 75px;
-    border-top: 5px solid rebeccapurple;
-    color: #fff;
-}
-
-.search {
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    width: 100%;
-    margin: 0 100px;
-}
-
-.btn {
-    background-color: rebeccapurple;
-    color: #fff;
-    width: 120px;
-    height: 40px;
-    border: 2px solid #000;
-    box-shadow: 4px 4px #000;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.nav-container, .flex-container {
-    width: 1080px;
+.Box1{
+    display: flex;
+    align-items: center;
+    background-color: #CCCCCC;
+    padding: 0px 20px;
+    justify-content: center;
+    border: rgb(194, 186, 186);
     margin: 0 auto;
-    display: flex;
+    width:50%;
+    height:40%;
+    font-family: monospace;
 }
-
-.nav-container {
-    justify-content: space-between;
-    align-items: center;
-    height: inherit;
-}
-
-.flex-container {
-    padding: 20px;
-    background-color: #fff;
-}
-
-.col-l {
-    flex: 2;
-}
-
-.col-r {
-    flex: 1;
-    margin-left: 20px;
-}
-
-.placeholder {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.placeholder svg {
-    border-radius: 10px;
-}
-
-.row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.user {
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-}
-
-.start h1 {
-    margin-bottom: 10px;
-}
-
-.start h3 {
-    color: #333;
-    font-weight: 400;
-}
-
-.avatar-s {
-    height: 64px;
-}
-
-.user-name {
-    margin-left: 10px;
-    color: rebeccapurple;
-    font-size: 1.2rem;
-    font-weight: 900;
-    font-size: 1.2rem;
-}
-
-.sub-header {
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #999;
-}
-
-.video-small {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.vid-s {
-    width: 170px;
-    margin-right: 10px;
-}
-
-.video-title {
-    font-size: 1.2rem;
-    font-weight: 900;
-}
-video{
+.hh{
+    color: black;
     position: relative;
+    right: 20%;
+    font-family: monospace;
+}
+.search-bar{
+    border:2px black solid;
+    position: relative;
+    right: 10%;
+    width: 30%;
+    height: 30px;
+    font-family: monospace;
+}
+.btn{
+    background-color: #2B78E4;
+    box-shadow: 2px 1px 2px 1px black;
+    width: 10%;
+    height: 20%;
+    border: black solid 3px;
+    color: white;
+    width: 10%;
+    height: 20%;
+    font-family: monospace;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    border: black solid 3px;
+    width:40%;
+    height: 300px;
+    position: relative;
+    left: 270px;
+    font-family: monospace;
+
+}
+.content{
+    position: relative;
+    left:80%;
+    bottom:45%;
+    font-family: monospace;
+}
+.Box2{
+    position: relative;
+    right: 25%;
+    font-family: monospace;
+}
+.btn1{
+    background-color: #FFD966;
+    color: black;
+    width: 90px;
+    height: 40px;
+    box-shadow: 2px 3px 2px 1px;
+    border:black solid 3px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+    font-family: monospace;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    border: black solid 3px;
+    width:40%;
+    height: 300px;
+    position: relative;
+    left: 270px; 
+    font-family: monospace;
+}
+.Box3{
+    position: relative;
+    right: 25%;
+    font-family: monospace;
+}
+.btn2{
+    background-color: #FFD966;
+    color: black;
+    width: 90px;
+    height: 40px;
+    box-shadow: 2px 3px 2px 1px;
+    border:black solid 3px;
+    position: relative;
+    top: 30px;
+    right: 10px; 
+    font-family: monospace;
+}
+.content2{
+    position: relative;
+    left:80%;
+    bottom:45%;
+    font-family: monospace;
     
+}
+#like{
+    font-weight: bold;
+    font-family: monospace;
+
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    border: black solid 3px;
+    box-shadow: 1px 1px 1px 1px;
+    width:20%;
+    position: relative;
+    left: 930px;
+    bottom: 650px;
+    font-family: monospace;
+
+    
+}
+.btn3{
+    background-color: #93C47D;
+    box-shadow: 2px 3px 2px 1px;
+    border:black solid 3px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+
+    
+    
+}
+.content3{
+    position: relative;
+    right: 40px;
+    font-family: monospace;
+    
+
+}
+.container3 p{
+    width: 20px;
 }
