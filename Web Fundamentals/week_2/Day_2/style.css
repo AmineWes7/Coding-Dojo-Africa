@@ -41,7 +41,7 @@ body {
     height: 18%;
 }
 
-.like-button {
+button {
     background-color: #ffbf00;
     color: white;
     padding: 5px 10px;
@@ -59,8 +59,8 @@ body {
 }
 span{
     position: relative;
-    left: 75%;
-    bottom: 25%;
+    left: 80%;
+    bottom: 16%;
 }
 .aa{
     border: 1px solid #ddd;
