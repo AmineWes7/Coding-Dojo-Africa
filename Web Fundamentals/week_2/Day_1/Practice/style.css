@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Box1{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 0px auto;
+    justify-content: center;
+    border: rgb(194, 186, 186);
+    margin: 0 auto;
+    font-family: monospace;
+    height: 10%;
+}
+.hh{
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 40%;
+    font-family: monospace;}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    height: 10%;
+}
+.main-content {
+    margin: 15px;
+    width: 50%;
+}
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 170%;
+    height: 18%;
+}
+
+button {
+    background-color: #ffbf00;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.like-button:hover {
+    cursor: pointer;
+}
+.all{
+    position: relative;
+    left: 32%;
+    width: 50%;
+    bottom: 45%;
+}
+span{
+    position: relative;
+    left: 80%;
+    bottom: 16%;
+}
+.aa{
+    border: 1px solid #ddd;
+    width: 15%;
+    height: 45%;
+    position: relative;
+    left: 15%;
+    top: 5%;
+}
+img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 50px;
+    top: 25px;
+}
+.a{
+    position: relative;
+    left: 42px;
+    top: 30px;
+}
+.p{    position: relative;
+    left: 47px;
+    top: 30px;}

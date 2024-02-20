@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ------nav-bar------- -->
+    <nav>
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+            <li>
+                <a id="myText" href="#">Burbank</a>
+            </li>
+            <li>
+                <a href="#">Chicago</a>
+            </li>
+            <li>
+                <a href="#">Dallas</a>
+            </li>
+        </ul>
+
+    </nav> <br> <br>
+    <!-- ---------header--------- -->
+    <div class="container">
+        <div class="subtitle-line">
+            <h1>San Jose</h1>
+        <form>
+            <label>show temparature in <span>
+                <select name="degree" id="degree">
+                    <option value="C">C°</option>
+                    <option value="F">F°</option>
+                </select>
+                <p id="number"></p>
+        </form>
+    
+            </span>
+            <label>
+
+        </div>
+        
+        
+            
+        
+    </div> <br> <br>
+    <!-- -------main------- -->
+    <div class="main">
+        <!-- ------top-box-------- -->
+        <div class="top-box">
+            <div class="box1">
+                <h4>Today</h4>
+                <img class="img" src="./some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="degree">
+                    <span class="degree_1">24°</span>
+                    <span class="degree_2">18°</span>
+                </div>
+            </div>
+            <div class="box2">
+                <h4>Tomorrow</h4>
+                <img class="img" src="./some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="degree">
+                    <span class="degree_3">27°</span>
+                    <span class="degree_4">19°</span>
+                </div>
+
+            </div>
+            <div class="box3">
+                <h4>Friday</h4>
+                <img class="img" src="./some_clouds.png" alt="">
+                <p>some sun</p>
+                <div class="degree">
+                    <span class="degree_5">21°</span>
+                    <span class="degree_6">16°</span>
+
+                </div>
+
+            </div>
+            <div class="box4">
+                <h4>Saturday</h4>
+                <img class="img" src="./some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="degree">
+                    <span class="degree_7">26°</span>
+                    <span class="degree_8">21°</span>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div> <br> <br>
+    <!-- -------bottom-box-------- -->
+    <div id="myBox">
+    <div class="bottom-box">
+        <!-- -----logo----- -->
+        <div class="logo">
+            <img src="cookie.png" alt="cookie">
+        </div>
+        <!-- ------txt------- -->
+        <div class="txt">
+            <h1>Stop! Cookie time</h1>
+            <p class="a">We use cookies (sadly not the edible ones) to personolize</p>
+            <p class="a">content and ads, to provide social media features and to</p>
+            <p class="b">analyse our traffic.<a href="#">read more...</a></p>
+        </div>
+        <div><button onclick="" class="btn">I Accept</button></div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body> 
+</html>

@@ -1,0 +1,35 @@
+.row{
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+}
+.col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left:10px ;
+}
+
+
+.col-2{
+    flex:2;
+    padding:10px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #659DA1;
+
+}
+.col-3{
+    flex:3;
+    margin-left: 15px;
+    background-color: #659DA1;
+    padding-top:20px;
+    width: 20%;
+}
+.ii{
+    
+}
