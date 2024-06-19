@@ -1,0 +1,37 @@
+<h1>Dojos</h1>
+<ul>
+    {% for dojo in dojos %}
+        <li><a href="{{ url_for('dojo_show', dojo_id=dojo.id) }}">{{ dojo.name }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('new_dojo') }}">Add a new Dojo</a>
+<h1>Add a new Dojo</h1>
+<form action="" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" value="Add Dojo">
+</form>
+<h1>{{ dojo.name }}</h1>
+<h2>Ninjas:</h2>
+<ul>
+    {% for ninja in dojo.ninjas %}
+        <li>{{ ninja.first_name }} {{ ninja.last_name }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('dojos') }}">Back to Dojos</a>
+<h1>Ninjas</h1>
+<a href="{{ url_for('new_ninja') }}">Add a new Ninja</a>
+<h1>Add a new Ninja</h1>
+<form action="" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"><br><br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name"><br><br>
+    <label for="dojo_id">Dojo:</label>
+    <select id="dojo_id" name="dojo_id">
+        {% for dojo in dojos %}
+            <option value="{{ dojo.id }}">{{ dojo.name }}</option>
+        {% endfor %}
+    </select><br><br>
+    <input type="submit" value="Add Ninja">
+</form>
