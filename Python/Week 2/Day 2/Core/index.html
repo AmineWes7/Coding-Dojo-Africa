@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dojo Survey</h1>
+        <form action="/process" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="location">Dojo Location:</label>
+                <select class="form-control" id="location" name="location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language">Favorite Language:</label>
+                <input type="radio" id="python" name="language" value="Python">
+                <label for="python">Python</label>
+                <input type="radio" id="java" name="language" value="Java">
+                <label for="java">Java</label>
+                <input type="radio" id="csharp" name="language" value="C#">
+                <label for="csharp">C#</label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment (optional):</label>
+                <textarea class="form-control" id="comment" name="comment"></textarea>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
