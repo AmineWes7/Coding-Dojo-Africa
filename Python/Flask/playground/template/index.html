@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: {{ color }};
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    {% for _ in range(times) %}
+        <div class="box"></div>
+    {% endfor %}
+
+</body>
+</html>
