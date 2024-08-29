@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dojo Survey</h1>
+        <form action="/process" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" class="form-control" id="location" name="location">
+            </div>
+            <div class="form-group">
+                <label for="language">Favorite Language:</label>
+                <input type="radio" id="python" name="language" value="Python">
+                <label for="python">Python</label>
+                <input type="radio" id="java" name="language" value="Java">
+                <label for="java">Java</label>
+                <input type="radio" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" id="comment" name="comment"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="frameworks">Favorite Frameworks:</label>
+                <input type="checkbox" id="flask" name="frameworks" value="Flask">
+                <label for="flask">Flask</label>
+                <input type="checkbox" id="django" name="frameworks" value="Django">
+                <label for="django">Django</label>
+                <input type="checkbox" id="react" name="frameworks" value="React">
+                <label for="react">React</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

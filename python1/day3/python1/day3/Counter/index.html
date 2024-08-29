@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter: {{ counter }}</h1>
+    <form action="/increment_by" method="post">
+        <input type="number" name="increment" placeholder="Increment by...">
+        <input type="submit" value="Increment">
+    </form>
+    <button onclick="location.href='/increment_by_2'">+2</button>
+    <button onclick="location.href='/reset'">Reset</button>
+    <button onclick="location.href='/destroy_session'">Destroy Session</button>
+</body>
+</html>
