@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dojos</title>
+</head>
+<body>
+    <h1>Dojos</h1>
+    <a href="/new_dojo">Add New Dojo</a>
+    <a href="/new_ninja">Add New Ninja</a>
+    <ul>
+        {% for dojo in dojos %}
+        <li>
+            <a href="/dojos/{{ dojo[0] }}">{{ dojo[1] }}</a> 
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+</body>
+</html>

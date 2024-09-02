@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ dojo[1] }}</title>
+</head>
+<body>
+    <h1>{{ dojo[1] }}</h1>
+    <ul>
+        {% for ninja in ninjas %}
+        <li>{{ ninja[1] }} {{ ninja[2] }} ({{ ninja[3] }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+</body>
+</html>
