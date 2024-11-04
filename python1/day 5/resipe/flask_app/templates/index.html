@@ -1,0 +1,207 @@
+<html>
+<head>
+    <title>Recipe Share</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header h1 {
+            color: purple;
+        }
+        .header a {
+            text-decoration: none;
+            color: blue;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container form {
+            width: 45%;
+        }
+        .form-container form input[type="text"],
+        .form-container form input[type="email"],
+        .form-container form input[type="password"],
+        .form-container form input[type="date"],
+        .form-container form textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .form-container form input[type="submit"] {
+            padding: 5px 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .recipes-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .recipes-table th, .recipes-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .recipes-table th {
+            background-color: #f2f2f2;
+        }
+        .recipes-table a {
+            text-decoration: none;
+            color: blue;
+        }
+        .back-link {
+            text-decoration: none;
+            color: blue;
+            display: block;
+            margin: 10px 0;
+        }
+        .recipe-details {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Register and Login Page -->
+        <div class="header">
+            <h1>Recipe Share</h1>
+        </div>
+        <div class="form-container">
+            <form>
+                <h2>Register</h2>
+                <label>First Name:</label>
+                <input type="text" name="first_name">
+                <label>Last Name:</label>
+                <input type="text" name="last_name">
+                <label>Email:</label>
+                <input type="email" name="email">
+                <label>Password:</label>
+                <input type="password" name="password">
+                <label>Confirm PW:</label>
+                <input type="password" name="confirm_password">
+                <input type="submit" value="Submit">
+            </form>
+            <form>
+                <h2>Log in</h2>
+                <label>Email:</label>
+                <input type="email" name="email">
+                <label>Password:</label>
+                <input type="password" name="password">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Dashboard Page -->
+        <div class="header">
+            <h1>Welcome, Alana</h1>
+            <div>
+                <a href="#">+Create</a> | <a href="#">logout</a>
+            </div>
+        </div>
+        <table class="recipes-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Under 30 Minutes?</th>
+                    <th>Posted By</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spaghetti</td>
+                    <td>Yes</td>
+                    <td>Alana</td>
+                    <td><a href="#">view recipe</a> | <a href="#">edit</a> | <a href="#">delete</a></td>
+                </tr>
+                <tr>
+                    <td>Spam Musubi</td>
+                    <td>Yes</td>
+                    <td>Kai</td>
+                    <td><a href="#">view recipe</a></td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>No</td>
+                    <td>Rajan</td>
+                    <td><a href="#">view recipe</a></td>
+                </tr>
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td>Yes</td>
+                    <td>Alana</td>
+                    <td><a href="#">view recipe</a> | <a href="#">edit</a> | <a href="#">delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Add a New Recipe Page -->
+        <div class="header">
+            <h1>Add a New Recipe!</h1>
+            <a href="#" class="back-link">back to recipes</a>
+        </div>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name">
+            <label>Description:</label>
+            <textarea name="description"></textarea>
+            <label>Instructions:</label>
+            <textarea name="instructions"></textarea>
+            <label>Date Cooked/Made:</label>
+            <input type="date" name="date_cooked">
+            <label>Under 30 minutes?</label>
+            <input type="radio" name="under_30" value="yes"> Yes
+            <input type="radio" name="under_30" value="no"> No
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Recipe Details Page -->
+        <div class="header">
+            <h1>Welcome, Alana</h1>
+            <a href="#" class="back-link">back to recipes</a> | <a href="#">logout</a>
+        </div>
+        <div class="recipe-details">
+            <h2>Spam Musubi</h2>
+            <p><strong>Posted by:</strong> Kai</p>
+            <p><strong>Description:</strong> A delicious Hawaiian favorite.</p>
+            <p><strong>Under 30 Minutes?</strong> Yes</p>
+            <p><strong>Instructions:</strong> Cook the rice. Pan fry several slices of spam. When rice and spam are done, distribute a row of rice a half-inch from the edge of the sushi paper. Layer spam on top. Roll, and enjoy!</p>
+            <p><strong>Date Made:</strong> January 9th, 2001</p>
+        </div>
+
+        <!-- Edit Recipe Page -->
+        <div class="header">
+            <h1>Edit Recipe!</h1>
+            <a href="#" class="back-link">back to recipes</a> | <a href="#">logout</a>
+        </div>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name" value="Garlic Bread">
+            <label>Description:</label>
+            <textarea name="description">A side dish that goes well with most pastas.</textarea>
+            <label>Instructions:</label>
+            <textarea name="instructions">Mix together fresh chopped garlic and butter. Slice French roll length-wise. Spread butter and garlic on bread halves.</textarea>
+            <label>Date Cooked/Made:</label>
+            <input type="date" name="date_cooked">
+            <label>Under 30 minutes?</label>
+            <input type="radio" name="under_30" value="yes"> Yes
+            <input type="radio" name="under_30" value="no"> No
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
